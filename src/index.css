@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-icons {
+  position: fixed;
+  top: 20;
+  right: 180px;
+  font-size: 40px;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.minav {
+  background: hsla(266, 54%, 46%, 0.459);
+}
+
+.letrasnav {
+  color: black;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 20px;
+}
+
+a img{
+  width: auto;
+  height: 100px;
 }
