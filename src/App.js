@@ -1,5 +1,6 @@
-import Productos from "./components/Productos";
+import ItemListContainer from "./items/ItemListContainer";
 import Navbar from "./components/NavBar";
+import ItemCount from "./items/ItemCount";
 
 
 
@@ -7,8 +8,9 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Productos bebidas="Cerveza" />
-      <Productos bebidas="Fernet" />
+      <ItemListContainer bebidas="Cerveza" />
+      <ItemListContainer bebidas="Fernet" />
+      <ItemCount initial={1} stock={10} />
     </>
   );
 }

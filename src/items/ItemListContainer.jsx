@@ -1,6 +1,6 @@
 import React , { Fragment } from "react";
 
-const Productos= (props) => {
+const ItemListContainer= (props) => {
     return(
         <Fragment>
             <h1>Bebida {props.bebidas}</h1>
@@ -8,4 +8,4 @@ const Productos= (props) => {
     );
 }
 
-export default Productos;
+export default ItemListContainer;

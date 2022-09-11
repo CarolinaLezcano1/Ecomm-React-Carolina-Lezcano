@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 .react-icons {
+  color: white;
   position: fixed;
   top: 20;
   right: 180px;
@@ -11,16 +12,25 @@
 }
 
 .minav {
-  background: hsla(266, 54%, 46%, 0.459);
+  background: black;
+  padding: 25px;
 }
 
-.letrasnav {
-  color: black;
-  font-family: 'Allerta Stencil', sans-serif;
-  font-size: 20px;
+.primary-content{
+  color: hsl(var(--pc));
 }
 
-a img{
+.accent-content{
+  color:hsl(var(--ac));
+}
+
+.img{
+  position: fixed;
+  left: 10px;
   width: auto;
-  height: 100px;
+  height: 90px;
+}
+
+.btn{
+  border-bottom: solid;
 }

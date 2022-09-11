@@ -1,24 +1,52 @@
-import { 
-    BiCart } from "react-icons/bi";
+import CartWidget from "./CartWidget";
+
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg minav">
-            <div className="container-fluid">
-                <a className="navbar-brand titulonav" href=""><img src="descarga.png" alt=""></img></a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
-                        <a className="nav-link letrasnav" aria-current="page" href="#">Inicio</a>
-                        <a className="nav-link letrasnav" href="#">Productos</a>
-                        <a className="nav-link letrasnav" href="#">Contacto</a>
-                        <div className="react-icons"><BiCart /></div>
-                    </div>
+        <div className="navbar bg-base-100 minav">
+            <div className="navbar-rigth">
+                <div className="dropdown">
+                    <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a className="base-100" >Item 1</a></li>
+                        <li tabIndex={0}>
+                            <a className="justify-between">
+                                Parent
+                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+                            </a>
+                            <ul className="p-2">
+                                <li><a className="bg-primary-content">Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
                 </div>
+                <a className="btn btn-ghost normal-case text-xl primary-content"><img src="1.png" alt="imagen icono" className="img"></img></a>
             </div>
-        </nav>
+            <div className="navbar-center hidden lg:flex">
+                <ul className="menu menu-horizontal p-0 primary-content">
+                    <li><a>Inicio</a></li>
+                    <li tabIndex={0}>
+                        <a>
+                            Productos
+                            <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+                        </a>
+                        <ul className="p-2 accent-content ">
+                            <li className="accent-content"><a>Cerveza Lager</a></li>
+                            <li><a>Cerveza Ale</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Contacto</a></li>
+                </ul>
+            </div>
+            < CartWidget />
+            <div className="navbar-end">
+                <a className="btn">Register</a>
+            </div>
+        </div>
     );
 }
 
