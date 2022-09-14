@@ -4,6 +4,7 @@ import ItemCount from "./items/ItemCount";
 
 
 
+
 const App = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const App = () => {
       <ItemListContainer bebidas="Cerveza" />
       <ItemListContainer bebidas="Fernet" />
       <ItemCount initial={1} stock={10} />
+      
     </>
   );
 }

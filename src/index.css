@@ -4,7 +4,7 @@
 
 .react-icons {
   color: white;
-  position: fixed;
+  position: absolute;
   top: 20;
   right: 180px;
   font-size: 40px;
@@ -25,12 +25,22 @@
 }
 
 .img{
-  position: fixed;
+  position: absolute;
   left: 10px;
   width: auto;
   height: 90px;
 }
 
-.btn{
-  border-bottom: solid;
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 35rem;
+  min-height: 35rem;
+  padding: 0 1rem;
+  border: 2px solid #cccccc;
+  box-shadow:
+      1px 1px 41px rgba(0, 0, 0, 0.2);
 }
+
+
