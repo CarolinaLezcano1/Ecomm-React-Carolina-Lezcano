@@ -14,7 +14,7 @@ const productos = [
         precio: 400,
         detail: "Imperial IPA",
         img: "https://i.ibb.co/Dkx4hGd/00000137-8b572f38-c4f8-4c08-a958-1180dcdda406.jpg",
-        categoria: "2",
+        categoria: "1",
 
     },
     {
@@ -47,7 +47,7 @@ const productos = [
         precio: 400,
         detail: "Corona",
         img: "https://i.ibb.co/LJ9zNvK/00000133-129e6950-cec3-4e18-88fe-259678f1968a.jpg",
-        categoria: "1",
+        categoria: "2",
     },
     {
         id: 7,

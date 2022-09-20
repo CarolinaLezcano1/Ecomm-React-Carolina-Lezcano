@@ -28,18 +28,24 @@ const NavBar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0 primary-content">
-                    <li><a>Inicio</a></li>
+                    <li>
+                    <link to="categoria/1"><a>Latas</a></link>
+                    </li>
+
                     <li tabIndex={0}>
-                        <a>
+                        <link to="prueba"><a>
                             Productos
                             <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                         </a>
+                        </link>
                         <ul className="p-2 accent-content ">
                             <li className="accent-content"><a>Cerveza Lager</a></li>
                             <li><a>Cerveza Ale</a></li>
                         </ul>
                     </li>
-                    <li><a>Contacto</a></li>
+                    <li>
+                    <link to="categoria/2"><a>Botella</a></link>
+                    </li>
                 </ul>
             </div>
             < CartWidget />
