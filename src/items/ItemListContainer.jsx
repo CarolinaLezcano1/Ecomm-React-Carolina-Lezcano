@@ -28,7 +28,7 @@ const ItemListContainer = ({greeting}) => {
     useEffect(() => {
         customFetch(productos)
         .then(data => setListaProductos(data))
-    }, [])
+    }, [categoria])
 
     console.log(listaProductos)
     return(

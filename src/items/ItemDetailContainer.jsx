@@ -26,10 +26,10 @@ const ItemDetailContainer = () => {
 
 
     useEffect(() => {
-        customFetch(productos[4])
+        customFetch(productos)
         .then(result => setItem(result))
         .catch(err => console.log(err))
-    }, []);
+    }, [id]);
 
     return(
         <ItemDetail item={item} />

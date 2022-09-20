@@ -7,8 +7,6 @@ import ItemList from "./items/ItemList";
 import ItemDetailContainer from "./items/ItemDetailContainer"
 
 
-
-
 const App = () => {
   return (
     <BrowserRouter>
@@ -22,7 +20,7 @@ const App = () => {
           element={<ItemListContainer/>}
         />
         <Route
-          path="/id" element={<ItemDetailContainer />}
+          path="/:id" element={<ItemDetailContainer />}
         />
       </Routes>
     </BrowserRouter>
