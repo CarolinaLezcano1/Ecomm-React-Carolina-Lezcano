@@ -4,7 +4,8 @@ import NavBar from "./components/NavBar";
 import ItemCount from "./items/ItemCount";
 import ItemDetail from "./items/ItemDetail";
 import ItemList from "./items/ItemList";
-import ItemDetailContainer from "./items/ItemDetailContainer"
+import ItemDetailContainer from "./items/ItemDetailContainer";
+import Cart from "./components/Cart";
 
 
 const App = () => {
@@ -21,6 +22,9 @@ const App = () => {
         />
         <Route
           path="/:id" element={<ItemDetailContainer />}
+        />
+        <Route
+        path="/cart" element={<Cart/>}
         />
       </Routes>
     </BrowserRouter>
