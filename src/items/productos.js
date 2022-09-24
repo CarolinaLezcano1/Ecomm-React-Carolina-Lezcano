@@ -3,7 +3,7 @@ const productos = [
     {
         id: 1,
         nombre: "Andes",
-        precio: "$400",
+        precio: 400,
         detail: "Andes Origen Rojita",
         img: "https://i.ibb.co/PCN4VGk/00000944-70980220-090c-49f2-a834-ba5a05cb83f0.jpg",
         categoria: "1",
