@@ -11,8 +11,8 @@ import  CartContextProvider  from "./components/CartContext";
 
 const App = () => {
   return (
-    <CartContextProvider>
     <BrowserRouter>
+    <CartContextProvider>
       <NavBar />
       <Routes>
         <Route
@@ -29,8 +29,9 @@ const App = () => {
         path="/cart" element={<Cart/>}
         />
       </Routes>
+      </CartContextProvider>
     </BrowserRouter>
-    </CartContextProvider>
+    
   );
 }
 

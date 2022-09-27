@@ -55,6 +55,11 @@
  }
  
  .detail-p{
-  
+  font-size: 20px;
+ }
+
+ .itemsInCart{
+  color: white;
+ font-size: small;
  }
 
