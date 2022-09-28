@@ -1,42 +1,46 @@
-import React, {useState, useEffect} from "react";
-import productos from "./productos";
+import React, { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import { db } from "../utils/firebaseConfig";
+import { collection, getDocs, where, query } from "firebase/firestore";
 
 
-const ItemListContainer = ({greeting}) => {
-    const [listaProductos, setListaProductos] = useState ([])
+const ItemListContainer = ({ greeting }) => {
+    const [listaProductos, setListaProductos] = useState([])
 
     const { categoria } = useParams();
 
-    const customFetch = (productos) => {
-        return new Promise ((resolve, reject) => {
-            setTimeout(
-                () => {
-                    if(categoria){
-                        resolve(
-                            productos.filter((producto) => producto.categoria == categoria)
-                        );
-                    }
-                    resolve(productos);
-                },
-                2000
-            );
-        });
-    };
 
     useEffect(() => {
-        customFetch(productos)
-        .then(data => setListaProductos(data))
+        const getData = async () => {
+            if (categoria){
+                const q =  query(collection(db, "productos"), where("categoria", "==", categoria))
+            
+                const queryShot = await getDocs(q)
+                const productos = queryShot.docs.map(item=>({
+                    id:item.id,...item.data()
+                })) 
+                setListaProductos(productos)
+            }
+            else{
+                const queryShot = await getDocs(collection(db, "productos"))
+                const productos = queryShot.docs.map(item=>({
+                    id:item.id,...item.data()
+                })) 
+                setListaProductos(productos)
+            }
+        }
+        getData()
     }, [categoria])
 
     console.log(listaProductos)
-    return(
+    return (
         <>
-            <div><ItemList listaProductos={listaProductos}/></div>
+            <div><ItemList listaProductos={listaProductos} /></div>
         </>
     )
-
-};
+}
 
 export default ItemListContainer;
+
+

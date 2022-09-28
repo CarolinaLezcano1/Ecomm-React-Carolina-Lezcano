@@ -11,27 +11,26 @@ import  CartContextProvider  from "./components/CartContext";
 
 const App = () => {
   return (
-    <BrowserRouter>
     <CartContextProvider>
+    <BrowserRouter>
       <NavBar />
       <Routes>
         <Route
-          path="/" element={<ItemListContainer />}
+          path="/Ecomm-React-Carolina-Lezcano" element={<ItemListContainer />}
         />
         <Route
-          path="/categoria/:categoria"
+          path="/Ecomm-React-Carolina-Lezcano/categoria/:categoria"
           element={<ItemListContainer/>}
         />
         <Route
-          path="/item/:id" element={<ItemDetailContainer />}
+          path="/Ecomm-React-Carolina-Lezcano/item/:id" element={<ItemDetailContainer />}
         />
         <Route
-        path="/cart" element={<Cart/>}
+        path="/Ecomm-React-Carolina-Lezcano/cart" element={<Cart/>}
         />
       </Routes>
-      </CartContextProvider>
     </BrowserRouter>
-    
+    </CartContextProvider>
   );
 }
 
