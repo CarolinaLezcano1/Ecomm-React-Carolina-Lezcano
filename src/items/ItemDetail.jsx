@@ -16,10 +16,10 @@ const ItemDetail = ({ item }) => {
 
   return (
     <>
-      <div>{item.nombre}</div>
+      <div className="itemNombre">{item.nombre}</div>
       <img src={item.img} alt="imagenDetail" width={250} />
-      <div>{item.detail}</div>
-      <div>{item.precio}</div>
+      <div className="itemDetail">{item.detail}</div>
+      <div className="itemPrecio">${item.precio}</div>
 
       {contador === 0 ? <ItemCount stock={10} initial={contador} onAdd={onAdd} />
         : <Link to="/Ecomm-React-Carolina-Lezcano/cart">

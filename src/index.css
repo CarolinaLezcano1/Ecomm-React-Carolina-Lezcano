@@ -1,7 +1,6 @@
 
 .react-icons {
   color: white;
-  position: absolute;
   top: 20;
   right: 180px;
   font-size: 40px;
@@ -9,7 +8,7 @@
 }
 
 .minav {
-  background: black;
+  background: #DEA5A4;
   padding: 25px;
   position: sticky;
   top:0;
@@ -43,7 +42,7 @@
 
  .btn{
   padding: 0.8em 1.8em;
-  border: 2px solid #17C3B2;
+  border: 2px solid blue;
   position: relative;
   overflow: hidden;
   background-color: transparent;
@@ -53,7 +52,7 @@
   transition: .3s;
   z-index: 1;
   font-family: inherit;
-  color: #17C3B2;
+  color: blue;
  }
  
  button::before {
@@ -64,7 +63,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: #17C3B2;
+  background: #DEA5A4;
   transition: .5s ease;
   display: block;
   z-index: -1;
@@ -89,5 +88,31 @@
 
  .categoria{
   margin: 1rem;
+  font-size: 20px;
+ }
+
+ .titulo{
+  font-size: 35px;
+  font-family: 'Gemunu Libre', sans-serif;
+ }
+
+ .itemNombre{
+  font-size: 25px;
+ }
+
+ .itemDetail{
+  font-size: 18px;
+  margin: 1rem;
+ }
+
+ .itemPrecio{
+  font-size: 25px;
+  margin: 1rem;
+  font-family: 'Gemunu Libre', sans-serif;
+ }
+
+ .totalPrice{
+  font-size: 20px;
+  font-family: 'Gemunu Libre', sans-serif;
  }
 
