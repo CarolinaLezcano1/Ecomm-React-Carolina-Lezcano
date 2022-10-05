@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+TodoBebidas/El Club De La Birra
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-Este proyecto se trata de un ecommerce de bebidas primero le habia puesto el club de la birra y lo cambie a ultimo momento TodoBebidas para ampliarlo mas y agregarle mas productos diferentes aparte de cervezas
 
-## Available Scripts
+-Tiene funciones como:
+*Lista de productos con categorias
+*Datos de productos guardados en el firebase
+*control de stock
+*dettale de los productos
+*agregar o eliminar el producto del carrito
+*orden de compra
 
-In the project directory, you can run:
+Vista previa
+![image](https://user-images.githubusercontent.com/107724375/194167124-b39403fc-76a8-4edd-9357-f111ae33fcdf.png)
+![image](https://user-images.githubusercontent.com/107724375/194167270-d4b73352-ace8-4845-b89d-1487b36bde84.png)
+![image](https://user-images.githubusercontent.com/107724375/194167332-1994498a-9242-419c-becd-95da42ff4e23.png)
 
-### `npm start`
+clonar repositorio:
+git clone https://github.com/CarolinaLezcano1/Ecomm-React-Carolina-Lezcano.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+para inicializar el proyecto empieze con: npm init
+luego: npm install y todas las dependencias
+para ejecutar el proyecto: npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Se utilizaron las siguientes recursos para este proyecto:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ReactJS - El framework web usado
+Bootstrap - Libreria para estilos
+ReactRouterDom - Libreria para rutas
+FireBase - Almacenamiento de datos
 
-### `npm run build`
+Autor:
+Carolina Lezcano
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
