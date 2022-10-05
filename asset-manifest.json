@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.19912fed.css",
-    "main.js": "/static/js/main.659e6984.js",
-    "static/js/787.5dd594a8.chunk.js": "/static/js/787.5dd594a8.chunk.js",
-    "index.html": "/index.html",
-    "main.19912fed.css.map": "/static/css/main.19912fed.css.map",
-    "main.659e6984.js.map": "/static/js/main.659e6984.js.map",
-    "787.5dd594a8.chunk.js.map": "/static/js/787.5dd594a8.chunk.js.map"
+    "main.css": "/Ecomm-React-Carolina-Lezcano/static/css/main.ad00b13e.css",
+    "main.js": "/Ecomm-React-Carolina-Lezcano/static/js/main.5cb11071.js",
+    "static/js/787.5dd594a8.chunk.js": "/Ecomm-React-Carolina-Lezcano/static/js/787.5dd594a8.chunk.js",
+    "index.html": "/Ecomm-React-Carolina-Lezcano/index.html",
+    "main.ad00b13e.css.map": "/Ecomm-React-Carolina-Lezcano/static/css/main.ad00b13e.css.map",
+    "main.5cb11071.js.map": "/Ecomm-React-Carolina-Lezcano/static/js/main.5cb11071.js.map",
+    "787.5dd594a8.chunk.js.map": "/Ecomm-React-Carolina-Lezcano/static/js/787.5dd594a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19912fed.css",
-    "static/js/main.659e6984.js"
+    "static/css/main.ad00b13e.css",
+    "static/js/main.5cb11071.js"
   ]
 }
